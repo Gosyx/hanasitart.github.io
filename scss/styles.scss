@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @import "header";
+  @import "main";
+  @import "emotes";
+
+  body {
+    margin: 0;
+  }
+
+  
+ .info-list {
+    font-size: 1.5rem;
+ }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    &:hover {
+      color: white;
+    }
+  }
+  .emotes2 {
+    filter: drop-shadow(5px -5px 10px black);
+  }
+  main {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url("../img/color-fondo-pastel-blanco-medio_477352-29.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .imagenfluid {
+    margin: 0 auto;
+    object-fit: cover;
+    width: 85%;
+  }
+  .flechaizq {
+    left: -25px;
+    width: 50px;
+  }
+  .flechader {
+    right: -25px;
+    width: 50px;
+  }
