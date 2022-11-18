@@ -11,6 +11,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="img/microsoft-paint.png" />
     <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css" rel="stylesheet" />
@@ -20,17 +21,43 @@
   </head>
   <body>
     <header>
-      <!--probando comentario-->
-      <div class="logo"><img src="img/logazo.png" alt="logo de perfil" class="logo" /></div>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="Emotes.html">Emotes</a></li>
-          <li><a href="Paneles.html">Paneles</a></li>
-          <li><a href="Insignias.html">Insignias</a></li>
-          <li><a href="Banners.html">Banners</a></li>
-          <li><a href="Info.html">Info</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-pink">
+        <div class="container-fluid mr-auto">
+          <a class="navbar-brand" href="#"> <img src="img/logazo.png" alt="logo de perfil" class="logo" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse grow-fix" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Emotes.html">Emotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Insignias.html">Insignias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Paneles.html">Paneles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Banners.html">Banners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="info.html">Info</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="main">
