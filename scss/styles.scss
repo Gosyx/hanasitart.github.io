@@ -19,4 +19,15 @@ a:link {
 
 body {
   background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+.boton {
+  border-radius: 12px;
+  background-color: #8a2be2;
+  padding: 24px 36px;
+  position: relative;
+  top: 24px;
+  &:hover {
+    background-color: #6116a7;
+  }
 }

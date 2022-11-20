@@ -6,6 +6,12 @@
   color: #8a2be2;
   margin-bottom: 30px;
 }
+h2 {
+  font-family: "Saira Condensed";
+  font-weight: 700;
+  font-size: 5rem;
+  color: #8a2be2;
+}
 p {
   color: #5a5a5a;
   font-family: "Poppins", sans-serif;
@@ -13,4 +19,14 @@ p {
   line-height: 1, 5;
 }
 .flechaizq {
+  left: -60px;
+  opacity: 1;
+}
+.flechader {
+  right: 70px;
+  opacity: 1;
+}
+.flechacolor {
+  background-color: #8a2be2;
+  border-radius: 50%;
 }

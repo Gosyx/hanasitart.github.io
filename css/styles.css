@@ -26,11 +26,39 @@ a:link {
   color: #8a2be2;
   margin-bottom: 30px; }
 
+h2 {
+  font-family: "Saira Condensed";
+  font-weight: 700;
+  font-size: 5rem;
+  color: #8a2be2; }
+
 p {
   color: #5a5a5a;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   line-height: 1, 5; }
 
+.flechaizq {
+  left: -60px;
+  opacity: 1; }
+
+.flechader {
+  right: 70px;
+  opacity: 1; }
+
+.flechacolor {
+  background-color: #8a2be2;
+  border-radius: 50%; }
+
 body {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif; }
+
+.boton {
+  border-radius: 12px;
+  background-color: #8a2be2;
+  padding: 24px 36px;
+  position: relative;
+  top: 24px; }
+  .boton:hover {
+    background-color: #6116a7; }

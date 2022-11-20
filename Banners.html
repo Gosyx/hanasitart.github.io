@@ -19,55 +19,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <main class="main">
-      <header>
-        <!--probando comentario-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <img src="img/logazo.png" alt="logo de perfil" class="nav-logo" /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse grow-fix" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="Emotes.html">Emotes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="Insignias.html">Insignias</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="Paneles.html">Paneles</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="Banners.html">Banners</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="info.html">Info</a>
-                </li>
-              </ul>
-            </div>
+    <header>
+      <!--probando comentario-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="img/logazo.png" alt="logo de perfil" class="nav-logo" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse grow-fix" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Emotes.html">Emotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Insignias.html">Insignias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Paneles.html">Paneles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Banners.html">Banners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="info.html">Info</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-      <h2>Banners</h2>
-      <p>
-        &nbsp;¡Mejora tu stream con un banner premium de Twitch! Sorprende a tus seguidores y gana nuevos fans con un diseño llamativo. nuestros
-        banners de Twitch transmitirán instantáneamente a tus espectadores que eres un streamer serio al que vale la pena seguir.
-      </p>
-      <a class="logoinst" href="https://www.instagram.com/hanasita.art/?hl=es"><i class="gg-instagram"></i></a>
-    </main>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <section class="row mt-5">
+        <div class="col-12 col-lg-6">
+          <h2>Banners y overlays</h2>
+          <p>
+            &nbsp;¡Mejora tu stream con un banner premium de Twitch! Sorprende a tus seguidores y gana nuevos fans con un diseño llamativo. nuestros
+            banners de Twitch transmitirán instantáneamente a tus espectadores que eres un streamer serio al que vale la pena seguir.
+          </p>
+
+          <ul class="precios">
+            <h3>ARS</h3>
+            <li>💙 Pack de stream: $2500 (ARS)</li>
+            <h3>USD</h3>
+            <li>💙 Pack de stream: $8 (USD)</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6">
+          <img class="w-100" src="Banners/bannersin.png" alt="banneroverlay" />
+        </div>
+      </section>
+      <section class="row mt-5">
+        <div class="col-12 col-lg-4">
+          <img class="w-100" src="banners/gatosleep.jpg" alt="gatosleep" />
+          <!-- Add a placeholder for the Twitch embed -->
+          <div id="twitch-embed"></div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <img class="w-100" src="Banners/offline.jpg" alt="game" />
+        </div>
+        <div class="col-12 col-lg-4">
+          <img class="w-100" src="Banners/image_5.png" alt="ososleep" />
+        </div>
+      </section>
+    </div>
+    <a class="logoinst" href="https://www.instagram.com/hanasita.art/?hl=es"><i class="gg-instagram"></i></a>
+    <script type="text/javascript">
+      new Twitch.Player("twitch-embed", {
+        video: "1647582425",
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
